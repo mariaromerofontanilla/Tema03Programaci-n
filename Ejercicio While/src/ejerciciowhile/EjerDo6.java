@@ -8,15 +8,20 @@ public class EjerDo6 {
 		//variable
 		Scanner sc = new Scanner(System.in);
 		final String piedra = "PIEDRA", papel = "PAPEL", tijera = "TIJERA";
+		final String s = "s", n = "n";
+		String pregunta;
 		String j1, j2;
-		int s=0;
+		int si=0;
 		
 		do {
+			
 			System.out.println("Jugador1 introduzca piedra, papel o tijera");
 			j1 = sc.next();
 			
 			System.out.println("Jugador2 introduzca piedra, papel o tijera");
 			j2 = sc.next();
+			
+			
 			
 			if (j1.equalsIgnoreCase(piedra) && j2.equalsIgnoreCase(piedra) || j1.equalsIgnoreCase(papel) && j2.equalsIgnoreCase(papel) || j1.equalsIgnoreCase(tijera) && j2.equalsIgnoreCase(tijera)) {
 				System.out.println("Empate");
@@ -27,13 +32,15 @@ public class EjerDo6 {
 			} else {
 				System.out.println("Error no has introducido ni piedra ni papel ni tijera");
 			}
-		} while (s != -1);
-		do {
-
-            System.out.println("¿Quieres seguir jugando? (S/N): ");
-        } while (sc.next().equalsIgnoreCase("S"));
-
-        System.out.println("¡Gracias por jugar! Hasta luego.");
+			System.out.println("¿Desea realizar otra partida? ");
+			pregunta = sc.next();
+			if (pregunta.equalsIgnoreCase(s)) {
+				si = 1;
+			} else if (pregunta.equalsIgnoreCase(n)){
+				si = -1;
+			}
+		} while (si > 0);
+		
         sc.close();
 	}
 		
