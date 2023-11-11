@@ -1,24 +1,49 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
+/*
+* Este ejercicio va de calcular el máximo común divisor de dos numero
+* CASO 1: Usuario introduce 15 y 9 || Resultado: 3
+* CASO 2: Usuario introduce 3 y 22 || Resultado: 1
+* CASO 3: Usuario introduce -15 y -9 || Resultado: Error debes introducir un numero positivo
+* CASO 4: Usuario introduce 0 y 0 || Resultado: 0
+*/
 
 public class ejercicio04 {
 
 	public static void main(String[] args) {
 		// variable
 		// crear la variable a, b menor y por ultimo la variable i todas numeros enteros
-		int a, b, menor, i;
-		// Crear Scanner
+		int a = 0, b = 0, menor, i=0;
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
-		// Imprime por pantalla de que introduzcas un numero
-		System.out.println("Introduce un numero: ");
-		// Scanner de la variable a
-		a = sc.nextInt();
-		// Imprime por pantalla de que introduzcas un numero
-		System.out.println("Introduce un numeros: ");
-		// Scanner de la variable b
-		b = sc.nextInt();
+		// do del try catch que hace lo siguiente
+		do {
+			// try que hace lo siguiente
+			try {
+				// Imprime por pantalla de que introduzcas un numero
+				System.out.println("Introduce un numero: ");
+				// Escaneo y guardado del valor del número
+				a = sc.nextInt();
+				// Imprime por pantalla de que introduzcas un numero
+				System.out.println("Introduce un numeros: ");
+				// Escaneo y guardado del valor del número
+				b = sc.nextInt();
+			// catch de exepciones
+			} catch (InputMismatchException e) {
+				// Imprime por pantalla cuando introduces algo que no esta bien por ejemplo una cadena te dira: Tipo de valor incorecto
+				System.out.println("Tipo de valor incorrecto");
+				// Scanner de cadena
+				sc.nextLine();
+			}
+		// while de que si la variable a es menor a 0 y de que la variable b es menor a 0 se salga del bucle
+		}while(a<0 && b<0);
+		
+		
 		// if de que si a es menor que b que haga lo siguiente
+		if (a >= 0 && b >= 0) {
+			
 		if (a<b) {
 			// la variable menor sea igual a la variable a
 			menor = a;
@@ -35,8 +60,11 @@ public class ejercicio04 {
 				break;
 			}
 		}
-		// Imprime el resultado el cual es la variable i que te dira cual es menor de los dos numero introducidos
-		System.out.println(i);
+		} else {
+			System.out.println("Error debes introducir un numero positivo");
+		}
+		// Imprime el resultado el cual es la variable i que te dira cual es el máximo comun divisor
+		System.out.println(i + " Es el máximo comun divisor");
 		// Cierre del Scanner
 		sc.close();
 	}

@@ -1,6 +1,15 @@
 package condicionales;
 
 import java.util.Scanner;
+/*
+ * Este programa trata de que se le pide al usuario que introduzca un numero del 1 al 99 y se le devuelve en letra
+ * En los casos especiales como ventiuno, vente... se hicieron excluciones para que no diran error
+ * CASO 1: Usuario pone 2 || Resultado: dos
+ * CASO 2: Usuario pone 21 || Resultado: ventiuno
+ * CASO 3: Usuario pone 0 Ó 100|| Resultado: Null (No puede poner un numero que este fuera del rango)
+ * CASO 4: Usuario pone 79 || Resultado: setenta y nueve
+ * CASO 5: Usuario pone 99 || Resultado: noventa y nueve
+ */
 
 public class ejercicio04 {
 
@@ -14,11 +23,11 @@ public class ejercicio04 {
 		int decena, unidad;
 		// Strings para almacenar la representación en palabras de las unidades y decenas
 		String uni = null, deci = null;
-		//Creación del Scanner
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// Solicitar al usuario que ingrese un número entre 1 y 99
 		System.out.println("Introduzca un numero del 1 al 99: ");
-		//Scanner de la variable numero
+		// Escaneo y guardado del valor del número
 		num=sc.nextInt();
 		// Descomponer el número en decenas y unidades
 		unidades = num % 10;

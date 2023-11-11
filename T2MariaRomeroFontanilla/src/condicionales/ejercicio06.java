@@ -2,6 +2,12 @@ package condicionales;
 
 import java.util.Random;
 import java.util.Scanner;
+/*
+ * Este ejercicio aparezcan dos números aleatorios (comprendidos entre 1 y 99) y el usuario tiene que sumarlos.
+ * CASO 1: El programa muestra dos numeros aleatorios || Ejemplo: 21 + 48 = || Resultado: 69 || Perfecto acertaste la suma es: 21 + 48 = 69
+ * CASO 2:  El programa muestra dos numeros aleatorios || Ejemplo: 75 + 25 =  || Resultado: 1 || Suma incorrecta vuelvelo a intentar: || Resultado: 100 || Perfecto acertaste la suma es: 75 + 25 = 100
+ * El usuario debera poner la suma correcta, si no el programa se lo seguira preguntando hasta que acierte
+ */
 
 public class ejercicio06 {
 
@@ -15,7 +21,7 @@ public class ejercicio06 {
 		int n2;
 		// Variable para la suma de n1 y n2
 		int suma=0;
-		// Crear Scanner
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// Crear Ramdon para generar numeros aleatorios
 
@@ -32,7 +38,7 @@ public class ejercicio06 {
 		// Imprime por pantalla de que introduzca la suma de los dos numeros
 
 		System.out.println("Introduce la suma de los dos numeros: ");
-		// Sacnner de la variable numero
+		// Escaneo y guardado del valor del número
 		num = sc.nextInt();
 		// Comprobar si la respuesta del usuario es igual a la suma
 		if (num == suma) {

@@ -1,6 +1,14 @@
 package condicionales;
 
 import java.util.Scanner;
+/*
+ * Este ejercicio trata de un bille de tren donde se le pide los kilometros realizados y los dias de estancias eso lo dira el usuario por teclado
+ * y el billete de tren por cada kilometro vale 2,5
+ * CASO 1: Usuario introduce 200 Kilometros e introduce 2 dias || Resultado: El billete de tren le sale a: 500.0€
+ * CASO 2: Usuario introduce 900 Kilometros e introduce 8 dias || Resultado: El billete de tren le sale a: 675.0€ (Ya que se le hace el 30%)
+ * CASO 3: Usuario introduce 0 Kilometros e introduce 0 dias || Resultado: El billete de tren le sale a: 0€
+ * CASO 4: Usuario introduce 20 Kilometros e introduce 0 dias || Resultado: El billete de tren le sale a: 50.0€
+ */
 
 public class ejercicio08 {
 
@@ -13,15 +21,15 @@ public class ejercicio08 {
 		double calculodes, descuento, calculo;
 		// variable int ( numeros enteros ) discancia y dias
 		int distancia, dias;
-		// Creación del Scanner
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// Pedir al usuario que introduzca por teclado la distancia
 		System.out.println("Introduzca la distancia: ");
-		// Scannear la variable distancia
+		// Escaneo y guardado del valor del número
 		distancia = sc.nextInt();
 		// Pedir al usuario que introduzca por teclado los dias
 		System.out.println("Introduzca los dias");
-		// Scanner de la variable dias
+		// Escaneo y guardado del valor del número
 		dias = sc.nextInt();
 		
 		// If donde hacemos el calculo de que si la distancia es igual o mayor a 800y los dias sean igual o mayor a 7, que haga lo siguiente

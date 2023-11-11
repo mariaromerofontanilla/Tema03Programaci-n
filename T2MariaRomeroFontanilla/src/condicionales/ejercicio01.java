@@ -18,11 +18,11 @@ public class ejercicio01 {
 		//variables
 		int num;
 		int unidad = 0,decena = 0,centenas = 0,mil = 0;
-		//Crear el Scanner
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		//Pedir al usuairo que introduzza por teclado un numero
 		System.out.println("Introduce un numero: ");
-		//Scanner de la variable num
+		// Escaneo y guardado del valor del número
 		num = sc.nextInt();
 		//Comienzo del if, te dice que si el numero (variable num) es mayor a 0 y el
 		

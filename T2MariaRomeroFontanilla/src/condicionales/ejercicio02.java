@@ -19,12 +19,12 @@ public class ejercicio02 {
 		//variable
 		int numeroDni, valor;
 		String letra = null;
-		//Crear Scanner
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		//Imprime por pantalla y le pide al usuario que introduzca su numero del DNI
 
 		System.out.println("Introduce tu DNI: ");
-		//Scanner de la variable numeroDni
+		// Escaneo y guardado del valor del número
 		numeroDni = sc.nextInt();
 		//calculo del valor que devuelve el modulo de 23 de la variable numeroDni
 		valor = numeroDni % 23;

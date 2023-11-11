@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ejercicio06 {
@@ -7,13 +8,27 @@ public class ejercicio06 {
 	public static void main(String[] args) {
 		// variable
 		// Crear la variable n
-		int n;
-		// Crear Scanner
+		int n = -1;
+		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
-		// Imprime por pantalla de que introduzcas un numero
-		System.out.print("Introduce un numero: ");
-		// Scanner de la variable n
-		n = sc.nextInt();
+		// do del try catch que hace lo siguiente
+		do {
+			// try que hace lo siguiente
+			try {
+				// Imprime por pantalla de que introduzcas un numero
+				System.out.print("Introduce un numero: ");
+				// Escaneo y guardado del valor del número
+				n = sc.nextInt();
+			// catch de exepciones
+			} catch (InputMismatchException e) {
+				// Imprime por pantalla cuando introduces algo que no esta bien por ejemplo una cadena te dira: Tipo de valor incorecto
+				System.out.println("Tipo de valor incorrecto");
+				// Scanner de cadena
+				sc.nextLine();
+			}
+		// while de que si numero es menor o igual a 0 y de que si numero es menor o igual a 20 se salga del bucle
+		} while (n <= 0 && n >= 20);
+		
 		// if de que si la variable n es mayor o igual a 0 u ademas es menor o igual a 20 que haga lo siguiente
 		if (n >= 0 && n <= 20) {
 			// for donde crea la variable i donde la pondra que es igual a i ademas de que i sea menor o igual a la variable n y un incremento de la variabe i
