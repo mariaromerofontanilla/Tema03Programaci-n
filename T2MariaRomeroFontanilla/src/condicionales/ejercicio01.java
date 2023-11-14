@@ -101,7 +101,7 @@ public class ejercicio01 {
 		//comienzo del else que te dice lo siguiente
 		else {
 		//Imprime por pantalla un error diciento que el numero que el usuario introducio por teclado alcanza el límite es decir que se soble pasa de 9999 o no llega a 0
-		System.out.println("Error e sobre pasaste del limite");
+		System.out.println("Error sobre pasaste del limite");
 		}
 		//cierre del Scanner
 		sc.close();

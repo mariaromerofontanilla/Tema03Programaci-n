@@ -38,7 +38,7 @@ public class ejercicio07 {
 				segundos = sc.nextInt();
 				segundos++; // Incrementar un segundo
 				// calculo de if de que si los segundos son menores a 60 y los minutos menores a 60 y las horas menores a 24 que haga lo siguiente
-				if (segundos < 60 && minutos < 60 && horas < 24) {
+				if (segundos <= 60 && minutos <= 60 && horas <= 24) {
 				// if de que si segundos es mayor o igual a 60 que haga lo siguiente
 				if (segundos >= 60) {
 				// segundos sea igual a 0

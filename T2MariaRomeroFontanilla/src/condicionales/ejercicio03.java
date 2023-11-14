@@ -4,7 +4,8 @@ import java.util.Scanner;
 /*
  * Este ejercicio trata de una granja, en la cual te piden la cantidad de comida comprada
  * los kilos de comida que comen cada animal y el numero de animales que tiene
- * CASO 1: 
+ * CASO 1: Usuario pone 12 de comida comprada, 3 animales y kilos que comen 3 || Resultado ahi comida suficiente
+ * CASO 2: Usuario pone 5 de comida comprada, 12 animales y 2 kilos que comen || Resultado: La cantidad para cada uso es de : 0.8333333333333334
  */
 
 public class ejercicio03 {

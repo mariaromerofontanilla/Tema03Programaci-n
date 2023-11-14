@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 * Este ejercicio trata de que el usuario introduce un numero cualquiera, y el programa le dibujara una piramide con asteriscos (*)
 * CASO 1: Usuario introduce 5 || Resultado:  
-* 	    *
+* 	   *
 *     * *
 *    * * *
 *   * * * *

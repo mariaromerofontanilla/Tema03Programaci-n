@@ -2,13 +2,23 @@ package bucles;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+/* Este ejercicio trata, en comprobar si es capicua o no el numero que introduzca el usuario
+ * Introduce -4 | Resultado: No Capicua
+ * Introduce 5 | Resultado: Capícua
+ * Introduce 11 | Resultado: Capicua
+ * Introduce 14 | Resultado: No Capicua
+ * Introduce 202 | Resultado: Capicua
+ * Introduce 210 | Resultado: No Capicua
+ * Introduce 1221 | Resultado: Capicua
+ * Introduce 5486 | Resultado: No Capicua
+ */
 
 public class ejercicio10 {
 
 	public static void main(String[] args) {
 		// variable
 		// Crear la variable n, num cal e igualarla a 0 y calculo
-		int n = -1, num = -1, cal=0,calculo;
+		int n = -1, num = -1, cal = 0,calculo;
 		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// do del comienzo del try catch

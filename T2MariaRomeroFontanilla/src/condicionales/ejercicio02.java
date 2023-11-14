@@ -18,7 +18,7 @@ public class ejercicio02 {
 	public static void main(String[] args) {
 		//variable
 		int numeroDni, valor;
-		String letra = null;
+		String letra=null;
 		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		//Imprime por pantalla y le pide al usuario que introduzca su numero del DNI
@@ -35,7 +35,6 @@ public class ejercicio02 {
 		switch (valor) {
 		//Donde te dicen que en el caso de 0 la letra sera la T, en caso de 1 la letra sera R y asi consecutivamente hasta 22
 		case 0:
-
 		letra = "T";
 		break;
 		case 1:
@@ -93,7 +92,6 @@ public class ejercicio02 {
 		letra = "H";
 		break;
 		case 19:
-
 		letra = "L";
 		break;
 		case 20:
@@ -108,9 +106,7 @@ public class ejercicio02 {
 		}
 		//Imprime por pantalla de que tu numero del DNI pertenece a la letra: la variable letra
 
-		System.out.println("Tu numero de DNI pertenece a la letra: " +
-
-		letra);
+		System.out.println("Tu numero de DNI pertenece a la letra: " + letra);
 
 		//de lo contrario else te dira lo siguiente
 		} else {

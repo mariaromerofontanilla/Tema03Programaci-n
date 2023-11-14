@@ -2,13 +2,24 @@ package bucles;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+/*
+ * Este programa trata de pedir al usuario un numero entre 0 y 20 y luego se repetira tantas veces como el valor que marca el numero
+ * CASO 1: Usuario pone: 5 || Resultado: 
+ * 1
+ * 22
+ * 333
+ * 4444
+ * 55555
+ * CASO 2: Usuario pone: -3 || Resultado: Debes introducir un numero del 0 al 20
+ * CASO 3: Usuario pone: 0 || Resultado: 0
+ */
 
 public class ejercicio06 {
 
 	public static void main(String[] args) {
 		// variable
 		// Crear la variable n
-		int n = -1;
+		int n = 0;
 		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// do del try catch que hace lo siguiente

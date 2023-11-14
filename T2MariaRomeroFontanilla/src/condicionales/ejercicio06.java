@@ -27,8 +27,8 @@ public class ejercicio06 {
 
 		Random r = new Random();
 		// Generar dos números aleatorios entre 1 y 100
-		n1= r.nextInt(1,100);
-		n2= r.nextInt(1,100);
+		n1= r.nextInt(1,101);
+		n2= r.nextInt(1,101);
 		// Calcular la suma de n1 y n2
 		suma= n1+n2;
 		// Realizar un bucle "do-while" que se ejecutará al menos una vez

@@ -2,13 +2,23 @@ package bucles;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/*
+ * Este programa trata de que el usuario introduce un numero y este llega hasta el valor del numero de 1 hasta el numero
+ * y luego se descrementa
+ * CASO 1: Usuario introduce: 4 || Resultado: 
+ * 1
+ * 121
+ * 12321
+ * 1234321
+ * CASO 2: Usuario introduce: 0 || Resultado: Introduce un numero que sea mayor a 0
+ * CASO 3: Usuario introduce: -24 || Resultado: Introduce un numero que sea mayor a 0
+ */
 public class ejercicio07 {
 
 	public static void main(String[] args) {
 		// variable
 		// crear la variable n
-		int n = -1;
+		int n = 0;
 		// Creación del escáner para leer la entrada del usuario
 		Scanner sc = new Scanner(System.in);
 		// do del try catch que hace lo siguiente

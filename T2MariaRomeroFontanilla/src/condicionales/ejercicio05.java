@@ -28,7 +28,7 @@ public class ejercicio05 {
 		// Calculo de la variable calculo diciendo que si es numero es mayor o igual a 0 que diga numero de lo contrario que lo multiplique por -1
 		calculo = num >= 0 ? num : num * -1;
 		//Imprime por pantalla el resultado de calculo
-		System.out.println(calculo);
+		System.out.println("Valor absoluto del numero: " + num + " es: " +calculo);
 		// Cierre del Scanner
 		sc.close();
 		}
