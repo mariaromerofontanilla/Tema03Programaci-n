@@ -44,11 +44,12 @@ public class ejercicio03 {
 				if (n > 0) {	
 				for (int i = 1; i <= n; i++) {
 				// Imprime espacios para darle la forma
-				for (int j = 1; j <= n - i; j++) {
+					for (int j = 1; j <= i; j++)
+					{
 				System.out.print(" ");
 				}
 				// Imprime los asteriscos para formarlo
-				for (int j = 1; j <= i; j++) {
+					for (int j = 1; j <= n - i; j++)  {
 				System.out.print("* ");
 				}
 				// Salto de línea para la siguiente fila del triángulo
