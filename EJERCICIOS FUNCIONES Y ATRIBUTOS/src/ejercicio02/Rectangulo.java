@@ -2,24 +2,29 @@ package ejercicio02;
 
 public class Rectangulo {
 
-	double alto;
-	double ancho;
+	// Atributos para almacenar las dimensiones del rectángulo
+    double alto;
+    double ancho;
 
-	public Rectangulo() {
-		this.alto = 0;
-		this.ancho = 0;
-	}
+    // Constructor predeterminado que inicializa las dimensiones en 0
+    public Rectangulo() {
+        this.alto = 0;
+        this.ancho = 0;
+    }
 
-	public Rectangulo(double alto, double ancho) {
-		this.alto = alto;
-		this.ancho = ancho;
-	}
+    // Constructor que permite establecer las dimensiones al crear un objeto de la clase
+    public Rectangulo(double alto, double ancho) {
+        this.alto = alto;
+        this.ancho = ancho;
+    }
 
-	public double perimetro() {
-		return 2 * (alto + ancho);
-	}
+    // Método para calcular el perímetro del rectángulo
+    public double perimetro() {
+        return 2 * (alto + ancho);
+    }
 
-	public double area() {
-		return alto * ancho;
-	}
+    // Método para calcular el área del rectángulo
+    public double area() {
+        return alto * ancho;
+    }
 }
